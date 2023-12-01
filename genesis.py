@@ -16,7 +16,7 @@ search_collection = client['Genesis-enriched']['**G-TYPE Search']  # Collection 
 
 # Fetch the first document
 document = collection.find_one()
-logo = "/Users/polaris/Genasis/gen_small.png"
+logo = "gen_small.png"
 st.image(logo, use_column_width=True)
 
 
