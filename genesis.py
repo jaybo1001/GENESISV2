@@ -3,12 +3,11 @@ from pymongo import MongoClient
 
 # Get the MongoDB connection details from the secrets
 host = st.secrets["mongo"]["host"]
-port = st.secrets["mongo"]["port"]
 username = st.secrets["mongo"]["username"]
 password = st.secrets["mongo"]["password"]
 
 # Create the MongoDB connection string
-connection_string = f"mongodb+srv://{username}:{password}@{host}:{port}"
+connection_string = f"mongodb+srv://{username}:{password}@{host}"
 
 # Establish a MongoClient Connection
 client = MongoClient(connection_string)
