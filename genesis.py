@@ -2,7 +2,7 @@ import streamlit as st
 from pymongo import MongoClient
 
 # Establish a MongoClient Connection
-client = MongoClient('mongodb+srv://jaybo2:pmp1jmb@cluster0.dosdp0e.mongodb.net/')
+client = client = MongoClient(st.secrets["mongo"]["url"])
 collection = client['Genesis-enriched']['**COMPANY']
 search_collection = client['Genesis-enriched']['**G-TYPE Search']  # Collection for search
 
