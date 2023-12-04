@@ -2,6 +2,7 @@ import streamlit as st
 from pymongo import MongoClient
 import streamlit.components.v1 as components
 
+st.set_page_config(layout="wide")
 
 
 # Establish a MongoClient Connection
@@ -87,5 +88,5 @@ components.html("""
 
 # Add the second iframe
 components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
+<iframe style="background: #000000;border: none;border-radius: 1px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
 """, height=580)
