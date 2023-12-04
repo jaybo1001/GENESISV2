@@ -4,6 +4,9 @@ import streamlit.components.v1 as components
 
 
 
+# Inject the CSS into the app
+st.markdown(custom_css, unsafe_allow_html=True)
+
 # Establish a MongoClient Connection
 client = MongoClient('mongodb+srv://jaybo2:pmp1jmb@cluster0.dosdp0e.mongodb.net/')
 collection = client['Genesis-enriched']['**COMPANY']
@@ -75,17 +78,18 @@ if search_term:
             description = result.get('GEN_CODE_description', 'N/A')
             results_placeholder.write(f"GEN_CODE: {gen_code} \n  Description: {description}")
 
+import random
+
+# Generate a random number
+rand_num = random.randint(0, 1000000)
 
 # Add a title to the top of the frame with the graphs
 st.image(logo, width=400)
 st.title(company_name)
 
-# Add the first iframe
-components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="480" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=6568ccc3-c315-4791-8556-10b62075ecf3&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
-""", height=480)
+# Embed the iframe
+iframe_html = f"""
+<iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);width: 100vw;height: 100vh;"  src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/dashboards?id=6561218b-9d63-42d3-9f7d-7b7f3c2c052d&theme=dark&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=scale&scalingHeight=scale"></iframe>
+"""
+components.html(iframe_html, height=1500, width=1000)
 
-# Add the second iframe
-components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
-""", height=580)
