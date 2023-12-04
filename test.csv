@@ -1,0 +1,78 @@
+_id,Physical,Automatable,Human Core,Augmentation
+"Maintenance and repair workers, general",0,0,0,4.0
+Customer service representatives,0,1,2,56.0
+Lawyers,0,4,11,32.0
+Public relations specialists,0,6,16,24.0
+Paralegals and legal assistants,0,8,6,14.0
+First-line supervisors of non-retail sales workers,0,9,17,35.0
+First-line supervisors of office and administrative support workers,0,11,23,27.0
+Training and development managers,0,11,18,14.0
+Occupational health and safety specialists,2,12,13,9.0
+Financial examiners,0,12,19,16.0
+Registered nurses,2,12,29,42.0
+Training and development specialists,0,12,15,19.0
+Human resources managers,0,13,23,19.0
+Chief executives,0,13,28,19.0
+Marketing managers,0,15,20,15.0
+Operations research analysts,0,15,13,12.0
+Actuaries,0,16,16,14.0
+Personal financial advisors,0,16,25,27.0
+"Compensation, benefits, and job analysis specialists",0,17,13,11.0
+Human resources specialists,0,19,23,16.0
+Sales managers,0,19,26,19.0
+Accountants and auditors,0,19,14,9.0
+"Property, real estate, and community association managers",1,19,22,15.0
+Web developers,3,19,21,12.0
+Public relations managers,2,20,35,27.0
+Network and computer systems administrators,8,20,13,11.0
+General and operations managers,0,20,28,24.0
+Database administrators,0,20,14,11.0
+File clerks,11,21,14,12.0
+Computer network architects,2,21,16,6.0
+Management analysts,0,21,20,13.0
+"Production, planning, and expediting clerks",1,22,17,14.0
+Computer user support specialists,7,22,19,19.0
+Administrative services managers,1,22,29,20.0
+Facilities managers,7,24,34,18.0
+Project management specialists,0,24,36,24.0
+Financial managers,0,24,20,16.0
+Statisticians,0,25,17,9.0
+Insurance sales agents,0,25,38,26.0
+Graphic designers,0,25,30,26.0
+Database architects,0,26,21,13.0
+"Sales representatives of services, except advertising, insurance, financial services, and travel",0,26,27,24.0
+Web and digital interface designers,2,26,30,21.0
+Computer programmers,2,27,28,19.0
+Software developers,0,27,28,21.0
+Information security analysts,0,27,21,14.0
+Computer systems analysts,0,27,24,12.0
+"Human resources assistants, except payroll and timekeeping",3,27,21,18.0
+Computer and information systems managers,0,27,25,17.0
+Financial and investment analysts,0,27,27,22.0
+"Office machine operators, except computer",29,28,21,10.0
+Property appraisers and assessors,1,29,24,18.0
+Executive secretaries and executive administrative assistants,0,29,22,19.0
+Financial risk specialists,1,29,27,19.0
+Software quality assurance analysts and testers,0,30,23,16.0
+Legal secretaries and administrative assistants,0,30,22,18.0
+"Mail clerks and mail machine operators, except postal service",22,31,21,12.0
+Loan interviewers and clerks,0,32,16,20.0
+Payroll and timekeeping clerks,2,33,15,2.0
+"Secretaries and administrative assistants, except legal, medical, and executive",3,33,20,15.0
+Buyers and purchasing agents,2,34,28,19.0
+"Claims adjusters, examiners, and investigators",0,35,31,21.0
+Data entry keyers,3,35,11,11.0
+Compliance officers,0,36,26,21.0
+Data scientists,0,36,21,13.0
+"Office clerks, general",3,37,43,14.0
+Bill and account collectors,3,37,35,18.0
+Billing and posting clerks,9,37,19,8.0
+Receptionists and information clerks,0,38,29,28.0
+"Title examiners, abstractors, and searchers",0,38,18,16.0
+"Securities, commodities, and financial services sales agents",0,39,18,20.0
+Insurance underwriters,0,41,19,14.0
+"Bookkeeping, accounting, and auditing clerks",7,43,23,4.0
+Credit analysts,0,43,25,11.0
+Travel agents,0,47,26,17.0
+"Insurance appraisers, auto damage",1,49,41,17.0
+Insurance claims and policy processing clerks,2,52,18,11.0

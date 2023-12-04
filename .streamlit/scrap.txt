@@ -1,0 +1,84 @@
+
+% Physical - Current W
+Automatable - Current Potential W
+Human Core Current W
+Augmentation - Current Capabilities W
+
+
+Create a view based on below
+note- All of these listed are in objects in the array 'G-TASK List'
+These Fields unchanged
+% Physical - Current
+Automatable - Current Potential
+Human Core Current
+Augmentation - Current Capabilities
+
+
+New Fields
+% Physical - Current W = % Physical - Current * TASK_frequency / 100
+Automatable - Current Potential W = Automatable - Current Potential * TASK_frequency / 100 
+Human Core Current W = Human Core Current * TASK_frequency / 100
+Augmentation - Current Capabilities W = Augmentation - Current Capabilities * TASK_frequency / 100
+
+
+
+
+
+
+Object
+G-TASK
+G-TASK Description
+O-ROLE
+O-ROLE Description
+Human Core Current
+30.08
+Human Core - Future
+10.08
+% Physical - Current
+0
+**Automation - Company Actual
+46.87
+Automatable - Current Potential
+60.03
+Automation - Future Capabilities
+76.12
+Automation Gap - Current
+13.16
+Automation Gap - Future Capabilities
+29.25
+**Augmentation - Company Actual
+13
+Augmentation - Current Capabilities
+40
+Augmentation Gap - Current
+27
+Augmentation Gap - Future Capabilities
+72
+Task Type
+"Core"
+TASK_frequency
+31.38
+TASK_importance
+65.25
+TASK_relevance
+70.1
+Rational 11_16
+"Budget planning can be automated, but human insight is necessary for c…"
+G_importance
+1
+Assumption ID
+1
+
+assumptions
+Object
+w Task Frequency
+9.41
+w Task Importance
+26.1
+w Task Relevance
+21.03
+G-IMPACT
+56.54
+
+G-EVD
+Array (1)

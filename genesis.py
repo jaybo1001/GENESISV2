@@ -1,9 +1,11 @@
 import streamlit as st
 from pymongo import MongoClient
 import streamlit.components.v1 as components
+import plotly.graph_objects as go
+import pandas as pd
+from work_breakdown_plot import plot_work_breakdown
 
 st.set_page_config(layout="wide")
-
 
 # Establish a MongoClient Connection
 client = MongoClient('mongodb+srv://jaybo2:pmp1jmb@cluster0.dosdp0e.mongodb.net/')
@@ -81,12 +83,9 @@ if search_term:
 st.image(logo, width=400)
 st.title(company_name)
 
-# Add the first iframe
-components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="480" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=6568ccc3-c315-4791-8556-10b62075ecf3&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
-""", height=480)
 
-# Add the second iframe
-components.html("""
-<iframe style="background: #000000;border: none;border-radius: 1px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
-""", height=580)
+# Call the function to get the plot
+plot = plot_work_breakdown()
+
+# Display the plot in the Streamlit app
+st.pyplot(plot)
