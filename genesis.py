@@ -11,7 +11,7 @@ search_collection = client['Genesis-enriched']['**G-TYPE Search']  # Collection 
 
 # Fetch the first document
 document = collection.find_one()
-logo = "/Users/polaris/Genasis/gen_small.png"
+logo = "gen_small.png"
 
 # Create a sidebar
 sidebar = st.sidebar
