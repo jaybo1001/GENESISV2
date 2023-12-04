@@ -82,10 +82,10 @@ st.title(company_name)
 
 # Add the first iframe
 components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=6568ccc3-c315-4791-8556-10b62075ecf3&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
+<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="480" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=6568ccc3-c315-4791-8556-10b62075ecf3&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
 """, height=480)
 
 # Add the second iframe
 components.html("""
-<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
+<iframe style="background: #000000;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="840" height="580" src="https://charts.mongodb.com/charts-genesis-zvkbj/embed/charts?id=1b7a64ad-07ab-4fcc-8b13-a5e5034fe08c&maxDataAge=60&theme=dark&autoRefresh=true"></iframe>
 """, height=580)
