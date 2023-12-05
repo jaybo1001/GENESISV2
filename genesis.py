@@ -15,6 +15,7 @@ search_collection = client['Genesis-enriched']['**G-TYPE Search']  # Collection 
 # Fetch the first document
 document = collection.find_one()
 logo = "gen_small.png"
+logo2 = "uipath_northstar.png"
 
 # Create a sidebar
 sidebar = st.sidebar
@@ -80,7 +81,7 @@ if search_term:
 
 
 # Add a title to the top of the frame with the graphs
-st.image(logo, width=400)
+st.image(logo2, width=500)
 st.title(company_name)
 
 
