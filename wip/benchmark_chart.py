@@ -11,7 +11,7 @@ default_northstar = 0.015
 
 
 # Display an image in the sidebar
-image_path = '/Users/polaris/PMPx/genesis_main/app/GENESISV2/images/gen_small.png'
+image_path = 'GENESISV2/wip/gen_small.png'
 try:
     image = Image.open(image_path)
     st.sidebar.image(image, use_column_width=True)
