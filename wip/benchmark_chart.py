@@ -11,7 +11,7 @@ default_northstar = 0.015
 
 
 # Display an image in the sidebar
-image_path = 'GENESISV2/wip/gen_small.png'
+image_path = 'gen_small.png'
 try:
     image = Image.open(image_path)
     st.sidebar.image(image, use_column_width=True)
@@ -24,7 +24,7 @@ northstar_value = st.sidebar.slider("Northstar", min_value=-0.05, max_value=0.05
 
 # Chart at the top of the page
 
-st.image('GENESISV2/images/uipath_northstar.png', use_column_width=600) 
+st.image('uipath_northstar.png', use_column_width=600) 
 #st.title("Intelligent Automation Benchmarks Net Impact")
 st.markdown("""
     <hr style="border: 4px solid '#F6F6F6'; margin-bottom: 25px give me; margin-top: 0px;" />
@@ -52,12 +52,12 @@ left_column, right_column = st.columns(2)
 
 # Left column - Annual Productivity Gain slider
 with left_column:
-    st.image('GENESISV2/images/prod_benchmark.png', use_column_width=600)    
+    st.image('prod_benchmark.png', use_column_width=600)    
     annual_productivity_gain = st.slider("Annual Productivity Gain", min_value=0.05, max_value=0.10, value=0.02)
 
 # Right column - Annual % Impact to EBIT slider
 with right_column:
-    st.image('GENESISV2/images/ebit_benchmark.png', use_column_width=600)
+    st.image('ebit_benchmark.png', use_column_width=600)
     
     annual_impact_to_ebit = st.slider("Annual % Impact to EBIT", min_value=0.10, max_value=0.40, value=0.15)
 
