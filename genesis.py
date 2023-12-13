@@ -6,6 +6,8 @@ import pandas as pd
 from work_breakdown_plot import plot_work_breakdown
 
 st.set_page_config(layout="wide")
+import os
+st.write(os.getcwd())
 
 # Establish a MongoClient Connection
 client = MongoClient('mongodb+srv://jaybo2:pmp1jmb@cluster0.dosdp0e.mongodb.net/')
@@ -14,8 +16,9 @@ search_collection = client['Genesis-enriched']['**G-TYPE Search']  # Collection 
 
 # Fetch the first document
 document = collection.find_one()
-logo = "gen_small.png"
-logo2 = "uipath_northstar.png"
+logo = "images/gen_small.png"
+logo2 = "images/uipath_northstar.png"
+
 
 # Create a sidebar
 sidebar = st.sidebar
